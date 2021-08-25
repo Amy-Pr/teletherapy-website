@@ -8,25 +8,38 @@
         <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="hamburger.js" defer></script>
+        <script src="https://kit.fontawesome.com/3a6339e79c.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container">
             <header>
-                <h1>Amy Preci</h1>
-                    <nav>
+                
+                <div class="burger">
+                    <h1>Teletherapy for Stuttering</h1>
+                    <a href="javascript:void(0);" class="hamburger">
+                        <i class="fa fa-bars" id="hamburger-icon"></i>
+                    </a>
+                </div> 
+                    <nav class="topnav">
                         <ul>
-                            <li><a href="">About Stuttering</a></li>
-                            <li><a href="">About Me</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li class=".nav-link"><a href="#stutter-info">About Stuttering</a></li>
+                            <li class=".nav-link"><a href="#about-me">About Me</a></li>
+                            <li class=".nav-link"><a href="#services">Services</a></li>
+                            <li class=".nav-link"><a href="#contact">Contact</a></li>
                         </ul>
-                    </nav>  
+                    </nav>
+                    
+
+                    
             </header>
 
         <div class="hero-area">
-            <h2><span> Hi,</span> Let's talk about talking. <br>
-            <span id="subhead">Click here to learn more about stuttering.</span> </h2>
-            <!--<h3 id="subhead">Click here to learn more about stuttering.</h3>-->
+            <div class="headlines">
+            <h2> Hi, Let's talk about talking.</h2>
+            <!--<span id="subhead">Scroll down to learn more about stuttering.</span>-->
+           <h3 id="subhead">Scroll down to learn more about stuttering.</h3>
+            </div>
         </div>
                 
             <section id="stutter-info">
@@ -71,12 +84,12 @@
             <section id="about-me">
                 <div class="content-wrapper">
                     <h2>About me</h2>
-                        <p>Hello. I'm Amy. I am a credentialed and licensed Speech-Language Pathologist specializing in fluency disorders. I am dual-licensed in the states of Oregon and California.
-                            I discovered telepractice in 2017, and have years of experience with assessment and treatment via an online platform (pre-pandemic!). I use a holistic and tailored 
+                        <p>Hello. I'm Amy. I am a credentialed and licensed Speech-Language Pathologist based in Portland, Oregon and specializing in fluency disorders. I am dual-licensed in the states of Oregon and California.
+                            I discovered telepractice in 2017 and have several years of experience with assessment and treatment via an online platform. I use a holistic and tailored 
                             approach to therapy, utilizing a variety of fluency shaping ("talk more fluently") and fluency modification ("stutter more easily") techniques, along with addressing
                             the thoughts and feelings that feed into and maintain dysfluent speech. I feel fortunate to accompany you on this journey toward greater self-acceptance, confidence, and more 
                             fluent speech! <br>
-                            -- Amy Preci, M.S., CCC-SLP
+                            <em>Amy Preci, M.S., CCC-SLP</em>
                         </p>
                 </div>
             </section>
@@ -84,11 +97,12 @@
             <section id="services">
                 <div class="content-wrapper">
                     <div class="rates">
-                        <img src="img/pencil-icon.png" alt="pencil icon" class="icon"/>
+                        <i class="fas fa-pencil-alt"></i>
+                        <!--<img src="img/pencil-icon.png" alt="pencil icon" class="icon"/>-->
                         <h3>Services</h3>
                         <p>I offer assessment and treatment of fluency disorders at affordable rates for clients of all ages residing in the states of Oregon and California. (Important: 
                             you must be physically in the states of OR or CA in order for me to legally provide you services via telepractice!) Please note, I cannot accept insurance at 
-                            this time. Services are cash-only. You may pay via Paypal, Venmo, or credit card. 
+                            this time. You may pay via Paypal, Venmo, or credit card. 
                         </p>
                         <ul>
                             <li>Initial Assessment: $115.00</li>
@@ -97,11 +111,20 @@
                         </ul>
                     </div>
                     <div class="booking">
-                        <img src="img/html-icon.png" alt="CSS icon" class="icon"/>
+                        <i  class="fas fa-calendar-day"></i>
+                        <!--<img src="img/html-icon.png" alt="CSS icon" class="icon"/>-->
                         <h3>Book Now!</h3>
-                        <p>Once you have booked a session with me, you will recieve an invoice and instructions on how to login to your session. Sessions are conducted securely through
+                        <p>Once you have booked an appointment with me, you will recieve an invoice and a calendly invite with instructions on how to login to your session. Sessions are conducted securely through
                             the Zoom platform. All you will need is a reliable internet connection, a webcam, and a quiet place to start our session.
                         </p>
+
+                        <!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/amy-pr-teletherapy/initial-assessment?hide_gdpr_banner=1'});return false;">Click here to book your initial assessment!</a>
+<!-- Calendly link widget end -->
+
+
                     </div>
                 </div>
             </section>
@@ -114,14 +137,15 @@
                     </div>
                     <div class="contact-info">
                         <h2>Got questions?</h2>
-                        <h3 id="email-header">Drop me an email.</h3>
+                        <h3 id="email-header">Call or drop me an email.</h3>
                         <a href="mailto:"><img id="envelope" src="img/envelope.png" alt= "envelope image" /></a>
                         <a href="mailto:">amytalkpath [@] hotmail.com</a>
+                        <p id="phone">503-597-8851</p>
                     </div>
+                    <div class="copyright">Copyright 2021 | Amy Preci</div>
                 </div>
             </footer>
-        </div>
-
+        </div> 
     
     </body>
 </html>

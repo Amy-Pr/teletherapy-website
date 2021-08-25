@@ -1,5 +1,10 @@
 
 /***** BASE STYLES *****/
+html {
+    font-size: 12px;
+}
+
+
 body {
 font-family: "Source Sans Pro", sans-serif;
 color: #2b2b2b;
@@ -8,7 +13,7 @@ margin: 0 auto;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 21px;
+font-size: 1.5rem;
 line-height: 40px;
 
 }
@@ -21,6 +26,7 @@ line-height: 40px;
 section {
     display: flex;
     justify-content: center;
+    padding: 40px 0;
 }
 
 .content-wrapper {
@@ -30,7 +36,7 @@ section {
 
 h2 {
     font-family: "Lora", serif;
-    font-size: 36px;
+    font-size: 2.57rem;
 }
 
 
@@ -47,57 +53,66 @@ h2 {
 }
 
 
-.icon {
-    max-height: 60px;
+i {
     padding-right: 15px;
+    font-size: 3em;
+    color: #c49075;
 }
 
-
-#stutter-info, #services, #contact {
-    min-height: 600px;
+a:hover {
+    color: #095256;
 }
-
-
 
 /****HEADER*****/
 
 header {
     height: auto;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
     padding: 38px 0;
-    position: fixed;
     background-color: white;
 }
 
 header h1 { 
-    font-size: 1.5em;
+    font-size: 1em;;
     margin: 0;
     width: 100%;
-    /*border-bottom: 3px solid #77a466;*/
-    text-align: center;  
-    padding-bottom: 20px;  
-    
+    text-align: left;
+    color: darkslategray;  
 }
 
 
 
 /**Navigation**/
+.topnav {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.burger {
+    display: flex;
+    padding: 0 20px;
+}
+
+#hamburger-icon {
+    color: blue;
+    padding: 0;
+}
+
 
 header nav ul {
     margin: 0;
-    padding: 0; 
+    padding-left: 20px; 
 }
 
 
 header nav ul li {
     list-style: none;
     font-size: .875em;
-    padding-top: 40px;
-    text-align: center;
+    padding-top: 20px;
+    text-align: left;
     
 }
 
@@ -119,27 +134,32 @@ header nav ul li a {
     
     .hero-area h2 {
         font-family: "Lora", serif;
-        font-size: 72px;
-        line-height: 80px;
+        font-size: 5.142rem;
+        line-height: 5.714rem;
         color: whitesmoke;
-        width: 80%;
+        width: 100%;
+        margin-top: 0;
         animation: fadeinup 1s ease-in-out;
         
     }
 
+    .headlines {
+        width: 80%;
+    }
+
     #subhead {
-        font-size: 36px;
-        font: sans-serif;
+        font-family: "Lora", serif;
+        font-size: 2.6rem;
         color: whitesmoke;
         margin: 0;
-        line-height: 10px;
         animation: fadeinup 2s ease-in-out;
     }
 
 /**Stutter Info**/
+
 #stutter-info h3 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.714rem;
+    line-height: 2.285rem;
 }
 
 
@@ -150,32 +170,36 @@ header nav ul li a {
 }
 
 
-/**Services***/
+/**Services and Booking***/
 
 #services {
     display: flex;
     align-items: center;
-    padding-top: 30px;
 }
 
 .rates, .booking {
-    
     display: flex;
     flex-flow: row wrap;
+    padding-bottom: 20px;
 }
 
 #services h3 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.714rem;
+    line-height: 2.285rem;
 }
 
-
+.booking a {
+    color: #c49075;
+    font-weight: bold;
+}
 
 /***FOOTER****/
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #ebebeb;
+    padding: 40px 0;
 }
 
 #contact .content-wrapper {
@@ -183,7 +207,6 @@ footer {
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
-    padding: 40px 0;
 }
 
 #contact img#contact-img {
@@ -194,8 +217,8 @@ footer {
 
 #contact h2 {
     font-family: "Lora", serif;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 2.571rem;
+    line-height: 3.142rem;
 }
 
 #contact-img {
@@ -204,9 +227,9 @@ footer {
 }
 
 #contact #email-header {
-    font-size: 32px;
+    font-size: 2.285rem;
     font-weight: normal;
-    line-height: 44px;
+    line-height: 3.142rem;
     margin: 0;
 }
 
@@ -215,29 +238,63 @@ footer {
     text-decoration: none;
     color: #c49075;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 2rem;
 }
 
+#phone {
+    color: #c49075;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 60px;
+    font-size: 1.5rem;
+
+}
 
 @media (min-width: 768px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .topnav {
+        display: block;
+    }
 
     header {
         justify-content: space-around;
         flex-flow: initial;
-
-        
+        display: flex;
     }
 
     header h1 { 
         border-bottom: none;
         text-align: left;
-        width: 50%;
-        padding: 0;
+        width: 100%;
     }
 
     header nav ul li {
         display: inline;
         padding: 0 10px;
+    }
+
+
+    .hamburger {
+        display: none;
+    }
+
+    .burger {
+        width: 35%;
+        padding: 0;
     }
 
 
@@ -250,8 +307,7 @@ footer {
     
     .rates, .booking {
         width: 45%;
-        display: flex;
-        flex-flow: row wrap;
+        padding: 0;
     }
 
     footer {
@@ -262,7 +318,11 @@ footer {
     
     #contact .content-wrapper {
         justify-content: space-around;
-    
+        width: 80%;
+    }
+
+    .contact-image {
+        display: flex;   
     }
 
 }
@@ -271,9 +331,17 @@ footer {
     @media (min-width: 1200px) {
 
     .content-wrapper {
-        width: 70%;
+        width: 65%;
     }
 
+    .burger {
+        width: 60%;
+        padding: 0;
+    }
+
+    header h1 {
+        padding: 0;
+    }
 
 
 
