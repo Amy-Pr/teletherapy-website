@@ -60,7 +60,7 @@ i {
 }
 
 a:hover {
-    color: #095256;
+    color:skyblue/*#095256*/;
 }
 
 /****HEADER*****/
@@ -96,11 +96,15 @@ header h1 {
     padding: 0 20px;
 }
 
+
 #hamburger-icon {
     color: blue;
     padding: 0;
 }
 
+#hamburger-icon:hover {
+    color: skyblue
+}
 
 header nav ul {
     margin: 0;
@@ -118,28 +122,44 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: indigo; 
+    color: indigo;
 }
 
 
 /**Hero Area**/
 .hero-area {
     min-height: 800px;
-    background-color: skyblue;
+    /*background: url(../img/talking.jpg) center top no-repeat;*/
+    /*background-size: cover;*/
+    /*background-color: skyblue;*/
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    position: relative;
     }
+
+    .hero-area::before {    
+        content: "";
+        background: url(../img/talking.jpg) center top no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.50;
+  }
     
     .hero-area h2 {
         font-family: "Lora", serif;
         font-size: 5.142rem;
         line-height: 5.714rem;
-        color: whitesmoke;
+        color: rgb(9, 9, 65);
         width: 100%;
         margin-top: 0;
         animation: fadeinup 1s ease-in-out;
+        position: relative;
         
     }
 
@@ -150,9 +170,10 @@ header nav ul li a {
     #subhead {
         font-family: "Lora", serif;
         font-size: 2.6rem;
-        color: whitesmoke;
+        color: rgb(9, 9, 65);
         margin: 0;
         animation: fadeinup 2s ease-in-out;
+        position: relative;
     }
 
 /**Stutter Info**/
@@ -166,7 +187,7 @@ header nav ul li a {
 /**About Me**/
 
 #about-me {
-    background-color: #B7D1DA/*#9BC4CB*/;
+    background-color: #bed2c5 /*#b5d5ce*/
 }
 
 
@@ -191,6 +212,10 @@ header nav ul li a {
 .booking a {
     color: #c49075;
     font-weight: bold;
+}
+
+.booking a:hover {
+    color: #095256;
 }
 
 /***FOOTER****/
@@ -240,6 +265,11 @@ footer {
     font-weight: bold;
     font-size: 2rem;
 }
+
+#contact a:hover {
+    color: #095256;
+}
+
 
 #phone {
     color: #c49075;
