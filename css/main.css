@@ -12,7 +12,7 @@
    ========================================================================== */
 
    html {
-    color: #222;
+    color: black;
     /*font-size: 1em;*/
     line-height: 1.4;
   }
@@ -95,14 +95,14 @@
   
   body {
   font-family: "Source Sans Pro", sans-serif;
-  color: #2b2b2b;
+  color: black;
   width: 100%; 
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  line-height: 3.333rem;
+  line-height: 2.6rem;
   
   }
   
@@ -222,7 +222,7 @@
     /*background-color: skyblue;*/
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     flex-flow: row wrap;
     position: relative;
     }
@@ -253,6 +253,7 @@
   
     .headlines {
         width: 80%;
+        padding-top: 200px;
     }
   
     #subhead {
@@ -266,16 +267,21 @@
   
   /**Stutter Info**/
   
-  #stutter-info h3 {
+  /*#stutter-info h3 {
     font-size: 1.714rem;
     line-height: 2.285rem;
+  }*/
+
+  #stutter-info p {
+    padding-bottom: 30px;
   }
   
   
   /**About Me**/
   
   #about-me {
-    background-color: #bed2c5 /*#b5d5ce*/
+    background-color: #869d96;/*#5F8575*/
+    color: white;
   }
   
   
@@ -293,7 +299,7 @@
   }
   
   #services h3 {
-    font-size: 1.714rem;
+    font-size: 2rem;
     line-height: 2.285rem;
   }
   
@@ -470,7 +476,7 @@
      @media (min-width: 768px) {
   
       html {
-          font-size: 14px;
+          font-size: 16px;
       }
     
       .topnav {
@@ -505,17 +511,7 @@
       }
     
     
-      #services .content-wrapper {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-          
-      }
       
-      .rates, .booking {
-          width: 45%;
-          padding: 0;
-      }
     
       footer {
           display: flex;
@@ -536,10 +532,25 @@
     
     
       @media (min-width: 1200px) {
+
+
     
       .content-wrapper {
-          width: 65%;
+          width: 72%; 
       }
+
+
+      #services .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+    }
+    
+    .rates, .booking {
+        width: 45%;
+        padding: 0;
+    }
     
       .burger {
           width: 60%;
