@@ -535,6 +535,9 @@
           font-size: 16px;
       }
     
+      div .contact-image {
+        width: 40%;
+      }
       .content-wrapper {
           width: 72%; 
       }
