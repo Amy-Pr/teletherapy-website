@@ -202,7 +202,7 @@
   
   header nav ul li {
     list-style: none;
-    font-size: .875em;
+    font-size: 1.3rem;
     padding-top: 20px;
     text-align: left;
     
@@ -556,7 +556,7 @@
     }
     
       .burger {
-          width: 60%;
+          width: 50%;
           padding: 0;
       }
     
