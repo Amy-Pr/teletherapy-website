@@ -333,11 +333,13 @@
     flex-flow: row wrap;
   }
   
-  #contact img#contact-img {
+  /*#contact img#contact-img {
+    border: 12px solid #ffffff;
+  }*/
+  
+  .contact-image {
     border: 12px solid #ffffff;
   }
-  
-  
   
   #contact h2 {
     font-family: "Lora", serif;
