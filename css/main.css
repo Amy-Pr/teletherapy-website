@@ -270,6 +270,9 @@
     font-size: 1.714rem;
     line-height: 2.285rem;
   }*/
+  #stutter-info {
+    padding-bottom: 0;
+  }
 
   #stutter-info p {
     padding-bottom: 30px;
@@ -311,6 +314,7 @@
   .booking a {
     color: #c49075;
     font-weight: bold;
+    font-size: 1.8rem;
   }
   
   .booking a:hover {
@@ -325,6 +329,8 @@
     background-color: #ebebeb;
     padding: 60px 0;
   }
+
+  
   
   #contact .content-wrapper {
     display: flex;
@@ -333,13 +339,11 @@
     flex-flow: row wrap;
   }
   
-  /*#contact img#contact-img {
-    border: 12px solid #ffffff;
-  }*/
-  
+   
   .contact-image {
     border: 12px solid #ffffff;
   }
+
   
   #contact h2 {
     font-family: "Lora", serif;
@@ -353,12 +357,16 @@
   }
   
   #contact #email-header {
-    font-size: 2.285rem;
+    font-size: 2rem;
     font-weight: normal;
     line-height: 3.142rem;
     margin: 0;
   }
   
+  #contact i {
+    font-size: 2rem;
+    padding-right: 5px;
+  }
   
   #contact a {
     text-decoration: none;
@@ -368,6 +376,10 @@
   }
   
   #contact a:hover {
+    color: #095256;
+  }
+
+  #contact a:hover i{
     color: #095256;
   }
   
@@ -543,7 +555,7 @@
 
       .rates ul {
         list-style-type: disc;
-        padding-left: 20px;
+        padding-left: 40px;
       }
 
     
@@ -557,6 +569,7 @@
           justify-content: space-around;
           width: 80%;
       }
+
     
       .contact-image {
           display: flex;   
@@ -565,7 +578,13 @@
       #contact h2 {
         font-size: 2.571rem;
       }
-    
+
+      #contact #email-header {
+        font-size: 2.285rem;
+        
+      }
+      
+      
     }
     
     
